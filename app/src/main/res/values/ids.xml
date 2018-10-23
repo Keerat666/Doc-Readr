@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="container2" type="id"></item>
+    <item name="fab_link" type="id"></item>
+    <item name="fab_link1" type="id"></item>
+</resources>

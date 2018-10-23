@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/tedit"
+        android:title="Trigger Highlight" />
+
+    <item
+        android:id="@+id/bmark"
+        android:title="Bookmark this page" />
+
+    <item
+        android:id="@+id/menuNight"
+        android:title="Enable Night Mode" />
+
+    <item
+        android:id="@+id/veset"
+        android:title="Voice Engine Settings" />
+
+</menu>

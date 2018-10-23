@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/buttoncont"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+
+    <com.victor.loading.rotate.RotateLoading
+        android:id="@+id/rotateloading"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:elevation="24dp"
+        app:loading_color="#000"
+        app:loading_width="5dp" />
+
+    <Button
+        android:id="@+id/buttonnew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="61dp"
+        android:background="@color/colorAccent"
+        android:onClick="traverse"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="SEARCH ALL FILES"
+        android:textColor="@color/cardview_light_background" />
+
+    <com.leinardi.android.speeddial.SpeedDialView
+        android:id="@+id/speedDial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:clickable="true"
+        app:sdMainFabClosedBackgroundColor="@color/colorAccent"
+        app:sdMainFabOpenedBackgroundColor="@color/orange"
+        app:sdMainFabClosedSrc="@drawable/ic_action_plus"
+        android:layout_marginStart="100dp"
+        android:focusable="true" />
+
+    <com.leinardi.android.speeddial.SpeedDialView
+        android:id="@+id/speedDialfolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:clickable="true"
+        app:sdMainFabClosedBackgroundColor="@color/colorAccent"
+        app:sdMainFabOpenedBackgroundColor="@color/orange"
+        app:sdMainFabClosedSrc="@drawable/ic_action_plus"
+        android:layout_marginStart="100dp"
+        android:focusable="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignBottom="@id/container2"
+        android:layout_alignBaseline="@id/container2"
+      >
+
+        <SearchView
+            android:id="@+id/searchView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@color/NAV"
+            android:queryHint="Search here">
+
+        </SearchView>
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@color/NAV"
+            />
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"></ListView>
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:id="@id/container2">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp">
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:menu="@menu/bottombar"
+            android:background="@color/NAV"
+            android:theme="@style/BottomNavigationTheme"
+            android:paddingRight="80dp"/>
+
+
+    </FrameLayout>
+</LinearLayout>
+</RelativeLayout>
